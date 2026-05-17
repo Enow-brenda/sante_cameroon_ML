@@ -46,6 +46,7 @@ T = {
             "pollution": "Pollution Index",
             "taux_mortalite_infantile": "Infant Mortality Rate",
         },
+        "about_title": "About",
         "about_text": "This dashboard presents a comprehensive Exploratory Data Analysis (EDA) of Cameroon's public health indicators. Based on the analysis of 200 districts, we identified key socio-economic and environmental drivers of infant mortality.",
          "insights": [
             ("Vaccination Shield", "Vaccination rate is the #1 protective factor (r = -0.56). Higher coverage consistently drives down mortality."),
@@ -80,6 +81,7 @@ T = {
             "pollution": "Indice de Pollution",
             "taux_mortalite_infantile": "Mortalité Infantile",
         },
+        "about_title": "À propos de",
         "about_text": "Ce tableau de bord présente une analyse exploratoire des indicateurs de santé publique au Cameroun. Basé sur l'analyse de 200 districts, nous avons identifié les principaux facteurs socio-économiques et environnementaux de la mortalité infantile.",
            "insights": [
             ("Bouclier Vaccinal", "La vaccination est le facteur #1 (r = -0,56). Une meilleure couverture réduit systématiquement la mortalité."),
@@ -299,7 +301,7 @@ with tabs[3]:
 # ─── TAB 5: ABOUT ─────────────────────────────────────────────────────────────
 with tabs[4]:
     st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
-    st.markdown(f"### About {tx['brand']}")
+    st.markdown(f"### {tx['about_title']} {tx['brand']}")
     st.write(tx["about_text"])
     st.markdown("---")
     st.markdown(f"#### {tx['data_dictionary']}")
